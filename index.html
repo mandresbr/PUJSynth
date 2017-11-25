@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Websynth</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/nexusUI.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Proyecto Multimedia PUJ</h1>
+        </header>
+        <section>
+            <div id="keyAreaDiv">
+                <canvas nx="keyboard"></canvas>
+            </div>
+            <br />
+            <div id="selectAreaDiv">
+                <h2>Osciladores</h2>
+                <div id="select1Div">
+                    <p>Oscilador 1</p>
+                    <br />
+                    <select onchange="selectOsc1(this.value)" id="oscillator1Type">
+                        <option value="square">square</option>
+                        <option value="sawtooth" selected="selected">sawtooth</option>
+                        <option value="triangle">triangle</option>
+                    </select>
+                </div>
+                <div id="select1Div">
+                    <p>Oscilador 2</p>
+                    <br />
+                    <select onchange="selectOsc2(this.value)" id="oscillator2Type">
+                        <option value="square">square</option>
+                        <option value="sawtooth" selected="selected">sawtooth</option>
+                        <option value="triangle">triangle</option>
+                    </select>
+                </div>
+            </div>
+            <div id="dialAreaDiv">
+                <h2>Pitch</h2>
+                <div id="dial1Div">
+                    <p>Pitch 1</p>
+                    <br />
+                    <canvas nx="dial"></canvas>
+                </div>
+                <div id="dial1Div">
+                    <p>Pitch 2</p>
+                    <br />
+                    <canvas nx="dial"></canvas>
+                </div>
+            </div>
+        </section>
+        <footer>MAS Software</footer>
+    </div>
+    <script type="text/javascript" src="js/websynth.js"></script>
+</body>
+
+</html>
