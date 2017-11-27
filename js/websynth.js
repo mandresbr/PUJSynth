@@ -15,6 +15,7 @@ if (mediaScreen.matches) {
     keyOctave = 1;
 };
 
+
 //Variables for Oscillator types
 var oscType1 = document.getElementById("oscillator1Type").value;
 var oscType2 = document.getElementById("oscillator2Type").value;
